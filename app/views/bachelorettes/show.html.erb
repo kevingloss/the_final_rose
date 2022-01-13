@@ -1,0 +1,5 @@
+<h1><%= @bachelorette.name %></h1>
+
+<p><%= "Season #{@bachelorette.season_number} - #{@bachelorette.season}" %></p>
+
+<%= link_to "Contestants", bachelorette_contestants_path(@bachelorette)%>

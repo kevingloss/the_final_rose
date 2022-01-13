@@ -7,3 +7,11 @@ Season Contestants:
   <%= "Age: #{contestant.age}, Hometown: #{contestant.hometown}" %>
 </p>
 <% end %>
+
+
+<p>
+  These Contestants are from these hometowns:
+  <% @bachelorette.contestant_hometowns.each do |town| %>
+    <%= town %>
+  <% end %>
+</p>

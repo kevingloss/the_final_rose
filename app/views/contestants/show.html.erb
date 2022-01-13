@@ -1,0 +1,9 @@
+<h1><%= @contestant.name %></h1>
+
+<p>
+  <%= "Appeared on Season #{@contestant.season_num} - #{@contestant.description}" %>
+</p>
+
+<% @contestant.outings.each do |outing| %>
+  <p><%= outing.name %></p>
+<% end %>

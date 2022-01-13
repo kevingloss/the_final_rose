@@ -35,6 +35,11 @@ RSpec.describe 'Bachelorette Show Page' do
   end
 
   it 'lists out all the unique hometowns of contestants' do
+    visit bachelorette_contestants_path(@b1)
 
+    expect(page).to have_content("Philadelphia, PA")
+    expect(page).to have_content("Miami, FL")
+    expect(page).to have_content("Denver, CO")
+    expect(page).to_not have_content("Houston, TX")
   end
 end

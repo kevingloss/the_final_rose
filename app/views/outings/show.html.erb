@@ -1,0 +1,9 @@
+<h1><%= @outing.name %></h1>
+
+<p>Location: <%= @outing.location%> | Date: <%= @outing.date%></p>
+
+<p>Count of Contestants: <%= @outing.num_contestants %></p>
+<p>Contestants: </p>
+<% @outing.contestants.each do |contestant| %>
+  <p><%= contestant.name %></p>
+<% end %>

@@ -5,5 +5,5 @@
 </p>
 
 <% @contestant.outings.each do |outing| %>
-  <p><%= outing.name %></p>
+  <p><%= link_to outing.name, outing_path(outing) %></p>
 <% end %>

@@ -15,7 +15,9 @@ RSpec.describe Contestant, type: :model do
     @c1 = @b1.contestants.create!(name: "Mark Johnson", age: 50, hometown: "Philadelphia, PA")
     @c2 = @b1.contestants.create!(name: "John Steel", age: 35, hometown: "Denver, CO")
     @c3 = @b1.contestants.create!(name: "Joe Jacobs", age: 40, hometown: "Miami, FL")
-    @c4 = @b2.contestants.create!(name: "Grant Gravelly", age: 55, hometown: "Houston, TX")
+    @c4 = @b2.contestants.create!(name: "GG Gravelly", age: 55, hometown: "Houston, TX")
+    @c5 = @b1.contestants.create!(name: "Gilbert Gravelly", age: 55, hometown: "Houston, TX")
+    @c6 = @b1.contestants.create!(name: "Grant Gravelly", age: 55, hometown: "Houston, TX")
 
     @o1 = @c1.outings.create!(name: "Volcano Ride", location: "Hawaii", date:"07/12/12")
     @o2 = @c1.outings.create!(name: "Cigar Tasting", location: "Cuba", date:"07/08/12")
